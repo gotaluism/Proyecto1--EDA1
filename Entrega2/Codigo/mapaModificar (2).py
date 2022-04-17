@@ -7,7 +7,7 @@ def main():
     datos = pd.read_csv('calles_de_medellin_con_acoso.csv', on_bad_lines='skip',delimiter=';')
     grafo= grafoProyecto.GrafoDic()
     grafo2 = grafoAcoso.GrafoDic2()
-    for i in range(len(datos)):
+    for i in range(len(datos)): #Por el tamaño del archivo es demasiado demorado al momento de compilar, pero también se puede probar con datos como por ej 10
         origen = tuple(map(float,datos["origin"][i][1:-1].split(",")))
         destino = tuple(map(float,datos["destination"][i][1:-1].split(",")))
         peso = (datos["length"][i])
