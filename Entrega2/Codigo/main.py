@@ -30,16 +30,7 @@ main()
 
 
 
-# def main():
-#     datos = pd.read_csv('calles_de_medellin_con_acoso.csv', on_bad_lines='skip',delimiter=';')
-#     grafo= grafoProyecto.GrafoDic()
-#     for i in range(len(datos)):
-#         origen = tuple(datos["origin"][i][1:-1].split(","))
-#         destino = tuple(datos["destination"][i][1:-1].split(","))
-#         peso = (datos["length"][i])
-#         grafo.cambiarPeso(origen,destino,peso)
-#     grafo.dibujar()
+
 
     
     
-# main()
